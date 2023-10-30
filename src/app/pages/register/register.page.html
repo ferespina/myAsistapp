@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true">
+  <ion-card class="card_fondo">
+    <ion-card-header>
+      <ion-card-title>Recuperar</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-card class="card_form">
+        <ion-card-header>
+          <ion-card-title style="color: rgb(4, 0, 255);">Datos de Usuario</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-input
+            type="mail"
+            label="Nombre de Usuario *"
+            labelPlacement="floating"
+            placeholder="Ingresa tu correo electrónico"
+            maxlength="30"
+            [(ngModel)]="nombreUsuario"
+            name="nombreUsuario"
+            required
+          ></ion-input>
+
+          <ion-input
+            type="password"
+            label="Contraseña *"
+            labelPlacement="floating"
+            placeholder="Ingresa una contraseña"
+            maxlength="30"
+            [(ngModel)]="contrasena"
+            name="contrasena"
+            required
+          ></ion-input>
+
+          <ion-input
+            type="password"
+            label="Repite la Contraseña *"
+            labelPlacement="floating"
+            placeholder="Ingresa nuevamente la contraseña"
+            maxlength="30"
+            [(ngModel)]="repetirContrasena"
+            name="repetirContrasena"
+            required
+          ></ion-input>
+        </ion-card-content>
+      </ion-card>
+      <br>
+      <ion-button>Recuperar</ion-button>
+      <br>
+      <ion-button (click)="irAInicioSesion()">Cancelar</ion-button>
+    </ion-card-content>
+    <br>
+  </ion-card>
+</ion-content>

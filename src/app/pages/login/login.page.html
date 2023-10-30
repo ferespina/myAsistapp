@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true">
+  
+  <ion-card class="card_fondo">
+    <ion-card-header>
+      <ion-card-title> </ion-card-title>
+    </ion-card-header>
+    <p></p>
+    <p></p>
+    <ion-card-content>
+      <ion-card class="card_form">
+        <ion-input
+          type="email"
+          label="Correo Electrónico"
+          labelPlacement="floating"
+          placeholder="Ingresa tu correo electrónico"
+          [(ngModel)]="email_alumno" 
+          name="email_alumno"
+          maxlength="30"
+        ></ion-input>
+
+        <ion-input
+          type="password"
+          label="Contraseña"
+          labelPlacement="floating"
+          placeholder="Ingresa tu contraseña"
+          [(ngModel)]="contrasena_alumno" 
+          name="contrasena_alumno"
+          maxlength="30"
+        ></ion-input>
+
+        <br>
+
+        <ion-button (click)="iniciarSesion()">Ingresar</ion-button>
+
+        <br />
+        <ion-label>
+          ¿Olvidaste tu contraseña?<br>
+          <a (click)="irARegister()">Recuperala.</a>
+        </ion-label>
+
+        <br />
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+</ion-content>  

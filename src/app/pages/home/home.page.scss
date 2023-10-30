@@ -1,0 +1,49 @@
+// style del header con el logo
+ion-card-header{
+  background-color: rgb(25, 60, 188);
+  padding: 0px;
+  align-items: center;
+}
+
+ion-card {
+  --background: rgb(255, 255, 255);
+  --color: #001aff;
+  margin: 0;
+  padding: 10px;
+  height: 100%;
+  border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+ion-card-title {
+  --color: #fffb00;
+}
+
+ion-button {
+  --background: rgb(8, 0, 255);
+  --background-hover: #9efff0;
+  --background-activated: #9efff0;
+  --background-focused: #9efff0;
+
+  --color: white;
+
+  --border-radius: 10px;
+
+  -box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.36);
+
+  --ripple-color: white;
+
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+}
+
+img {
+  width: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

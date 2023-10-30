@@ -1,0 +1,58 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Alumno</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    Perfil
+  </ion-content>
+  <ion-button (click)="cerrarSesion()">Cerrar Sesión</ion-button>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-card-header>
+      <img src="assets/image/logoDUSF.png" alt="Descripción de la imagen">
+    </ion-card-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <h1>Bienvenido, Registra tu Asistencia</h1>
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Selecciona Asignatura" [(ngModel)]="nombre_asignatura">
+          <ion-label>Asignatura</ion-label>
+          <ion-select-option value="arq">Arquitectura</ion-select-option>
+          <ion-select-option value="cds">Calidad de Software</ion-select-option>
+          <ion-select-option value="appmo">App Móvil</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">¿Presente o Ausente?</ion-label>
+        <ion-input [(ngModel)]="estado_asistencia" clearInput></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button (click)="registrarAsistencia()" expand="full">Registrar Asistencia</ion-button>
+  </ion-content>
+
+  <ion-content class="ion-padding">
+    <h2>Registros de Asistencia</h2>
+    <ion-list>
+      <ion-item *ngFor="let registro of registrosAsistencia">
+        <ion-label>Asignatura: {{ registro.nombre_asignatura }}</ion-label>
+        <ion-label>Estado: {{ registro.estado_asistencia }}</ion-label>
+        <!-- Otros campos si es necesario -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</div>
