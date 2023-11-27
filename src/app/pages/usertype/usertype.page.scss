@@ -1,0 +1,32 @@
+ion-card {
+    background-color: #1402d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/image/fondotype.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+  
+    .bienvenido-label {
+      font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+      margin-bottom: 15px; /* Espaciado entre el texto y los botones */
+      font-weight: bold;
+      color: rgb(242, 208, 15);
+    }
+  
+    ion-button {
+      margin-top: 10px; /* Reduje el espacio entre el texto y los botones */
+      --background: #1402d3;
+      --color: #ffffff;
+      border-radius: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  

@@ -5,7 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { NgModel } from '@angular/forms';
 import { ToastController } from '@ionic/angular';
-import { UsuarioService } from '../../services/supabase/usuario.service'; // Ruta corregida para el servicio
+import { UsuarioService } from '../../services/supabase/usuario.service'; 
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -36,7 +36,7 @@ export class LoginPage {
 
   async iniciarSesion() {
     try {
-      const result = await this.usuarioService.verificarCredenciales(this.email_alumno, this.contrasena_alumno);
+      const result = await this.usuarioService.verificarCredencialesAlumnos(this.email_alumno, this.contrasena_alumno);
 
       if (result) {
         // Inicio de sesión exitoso, redirige a la página principal o a donde desees

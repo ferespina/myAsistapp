@@ -1,0 +1,52 @@
+ion-card {
+    background-image: url('/assets/image/fondotype.png');
+     --color: rgb(239, 205, 16);
+     margin: 0;
+     padding: 10px;
+     height: 100%;
+     border-radius: 0;
+   
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .card_form{
+     border-radius: 5%;
+     padding: 5%;
+     background-color: rgba(255, 255, 255, 0.973);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+   }
+   
+   .card_fondo {
+     background-size: 100% auto; /* Ajusta verticalmente */
+     background-position: center; /* Ajusta la posición de la imagen */
+     color: white; /* Configura el color del texto en la tarjeta para que sea legible */
+   }
+   
+   ion-card-title {
+     --color: #ffffff;
+   }
+   
+   ion-button {
+     --background: rgb(11, 31, 246);
+     --background-hover: #9efff0;
+     --background-activated: #9efff0;
+     --background-focused: #9efff0;
+   
+     --color: rgb(230, 230, 11);
+   
+     --border-radius: 10px;
+   
+     -box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.36);
+   
+     --ripple-color: white;
+   
+     --padding-top: 10px;
+     --padding-bottom: 10px;
+   }
+   
+   a {
+     color: white;
+   }
+   

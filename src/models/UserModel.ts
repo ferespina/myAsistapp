@@ -65,3 +65,13 @@ export class clase{
     ){
     }
 }
+
+export class profesor{
+    constructor(
+        public id_profesor: Number,
+        public nombre_profe: String,
+        public apellido_profesor: String,
+        public email_profesor: String,
+        public contrasena_profesor: String
+    ){}
+}
